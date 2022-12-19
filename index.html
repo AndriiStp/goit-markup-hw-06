@@ -364,50 +364,48 @@
         <div class="subscribe">
             <h2 class="subscribe-title">Підпишіться на розсилку</h2>
             <input class="subscribe-input" type="email" name="subscribe" id="subscibe" placeholder="E-mail">
-            <button class="subscribe-button button" type="submit">Підписатись</button>
-        
+            <button class="subscribe-button button" type="submit">Підписатись
+                <svg  class="subscribe-icon" width="24px" height="24px">
+                    <use href=".//images/icons.svg#icon-send"></use>
+                </svg>
+            </button>        
         </div>
         </div>
         </div>
-
-        
+      
     </footer>
 <!-- Modal -->
     <div data-modal class="backdrop is-hidden">
         <div class="modal">
            <button data-modal-close class="close-modal">
             <svg class="close-icon" width="11px" height="11px">
-                <use href="./images/close.svg"></use>
+                <use href="./images/icons.svg#icon-close"></use>
             </svg>
            </button> 
 
            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form" >
-            <ul class=" modal-list list">
-                <li class=" modal-item item">
-                    <label class="modal-item-lable" for="name">Ім'я</label>
-                    <input class="modal-input" type="text" name="name" id="name">
-                </li>
+                <label class="modal-form-label" for="name">Ім'я</label>
+                <input class="modal-input" type="text" name="name" id="name" required>
 
-                <li class=" modal-item item">
-                    <label class="modal-item-lable" for="tel">Телефон</label>
-                    <input class="modal-input" type="tel" name="tel" id="tel">
-                </li>
+                <label class="modal-form-label" for="tel">Телефон</label>
+                <input class="modal-input" type="tel" name="tel" id="tel" required>
 
-                <li class=" modal-item item">
-                    <label class="modal-item-lable" for="mail">Пошта</label>
-                    <input class="modal-input" type="email" name="mail" id="mail">
-                </li>
+                <label class="modal-form-label" for="mail">Пошта</label>
+                <input class="modal-input" type="email" name="mail" id="mail" required>
 
-                <li class=" modal-item item">
-                    <label class="modal-item-lable" for="comment">Коментар</label>
-                    <textarea class="modal-textarea" name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
-                </li>
-            </ul> 
-            <div class="agree-check">
-            <input type="checkbox" name="agree" value="agree" id="agree">
-            <label for="agree">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
-            </div>
+                <label class="modal-form-label" for="comment">Коментар</label>
+                <textarea class="modal-textarea" name="comment" rows="10" placeholder="Введіть текст" id="comment"></textarea>
+                                       
+                <label class="agree-title" for="agree">                    
+                    <input class="checkbox" type="checkbox" name="agree" value="agree" id="agree">
+                    
+                    <svg class="agree-icon" width="16px" height="15px">
+                        <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                    Погоджуюся з розсилкою та приймаю <a href=""> Умови договору</a>
+                </label>
+            
             <button type="submit" class="modal-button button">Відправити</button>
         </form class="modal-form" >
         
